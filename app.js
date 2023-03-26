@@ -8,7 +8,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // DataBase connection
-const DB = process.env.DB_URL;
+const DB = process.env.DB;
 mongoose.connect(DB)
 
 // Router
